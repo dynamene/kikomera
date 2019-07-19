@@ -35,14 +35,3 @@ class Polygon:
             if P.x < min(A.x, B.x):
                 inside = not inside
         return inside
-
-
-if __name__ == "__main__":
-    my_polygon = Polygon([Point(1, 2), Point(5, 6), Point(7, 1)])
-    p1 = Point(5, 6)
-    # p2 = Point(5, 4)
-    # p3 = Point(4, 5)
-
-    print("p1 in polygon: " + str(my_polygon.contains(p1)))
-    # print("p2 in polygon: " + str(my_polygon.contains(p2)))
-    # print("p3 in polygon: " + str(my_polygon.contains(p3)))
