@@ -26,7 +26,7 @@ class Polygon:
 
         for edge in self.edges:
             A, B = edge[0], edge[1]
-            if A.x > B.x:
+            if A.y > B.y:
                 A, B = B, A
 
             if P.y == A.y or P.y == B.y:
@@ -35,4 +35,3 @@ class Polygon:
             if P.x < min(A.x, B.x):
                 inside = not inside
         return inside
-
