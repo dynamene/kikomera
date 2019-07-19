@@ -106,6 +106,4 @@ venv.bak/
 # TextEditors/IDEs
 .vscode
 
-# Coverage
-.coveralls.yml
 
