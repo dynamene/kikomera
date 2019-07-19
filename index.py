@@ -26,7 +26,7 @@ class Polygon:
 
         for edge in self.edges:
             A, B = edge[0], edge[1]
-            if A.x > B.x:
+            if A.y > B.y:
                 A, B = B, A
 
             if P.y == A.y or P.y == B.y:
@@ -39,7 +39,7 @@ class Polygon:
 
 if __name__ == "__main__":
     my_polygon = Polygon([Point(1, 2), Point(5, 6), Point(7, 1)])
-    p1 = Point(3, 4)
+    p1 = Point(5, 6)
     # p2 = Point(5, 4)
     # p3 = Point(4, 5)
 
